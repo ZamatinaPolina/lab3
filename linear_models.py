@@ -1,3 +1,10 @@
+import numpy as np
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+
+
 from grader_contracts.linear_models import (
     BaselineComparisonResult,
     ClassificationInput,
@@ -9,6 +16,7 @@ from grader_contracts.linear_models import (
 
 def train_linear_regression(data: RegressionInput) -> RegressionResult:
     """Обучите собственную линейную регрессию на train и верните прогноз для test."""
+    
     raise NotImplementedError
 
 
