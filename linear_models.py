@@ -14,6 +14,12 @@ from grader_contracts.linear_models import (
 )
 
 
+REG_LR, REG_EPOCHS = 0.1, 500
+CLF_LR, CLF_EPOCHS = 0.1, 2000
+THRESHOLD = 0.5
+SEED = 42
+
+
 def _standardize(X_train, X_test):
     X_train = np.asarray(X_train, dtype=float)
     X_test = np.asarray(X_test, dtype=float)
